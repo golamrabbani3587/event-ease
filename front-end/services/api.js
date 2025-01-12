@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5001/api";
+const API_URL = "https://event-api.begelled.com/api";
 
 export const loginUser = async (credentials) => {
   const response = await fetch(`${API_URL}/auth/login`, {
