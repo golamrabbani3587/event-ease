@@ -33,7 +33,7 @@ const Dashboard = () => {
   }, []);
 
   useEffect(() => {
-    const socket = io("http://localhost:5001");
+    const socket = io("https://event-api.begelled.com");
 
     socket.on("event:registration", ({ message }) => {
       setNotification(message);
@@ -186,7 +186,7 @@ const Dashboard = () => {
                     </div>
                   </form>
                 ) : (
-                  <div className="px-4 py-5 sm:px-6">
+                  <div className="px-4 py-1 sm:px-6">
                     <div className="bg-white p-6 rounded-lg shadow-md transform transition-all hover:scale-105 hover:shadow-xl duration-300 ease-in-out">
                       <div className="flex items-center justify-between">
                         <h3 className="text-lg leading-6 font-medium text-yellow-500">
