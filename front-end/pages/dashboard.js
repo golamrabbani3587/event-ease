@@ -41,7 +41,6 @@ const Dashboard = () => {
 
     return () => socket.disconnect();
   }, []);
-
   const formatDate = (dateString) => {
     const eventDate = new Date(dateString);
     const now = new Date();
